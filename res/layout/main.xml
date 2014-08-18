@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	<TabHost android:id="@android:id/tabhost" android:layout_width="match_parent" android:layout_height="match_parent">
+		<LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout1" android:layout_height="match_parent" android:orientation="vertical">
+	<mediba.ad.sdk.android.openx.MasAdView
+		android:id="@+id/adview"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:scrollbars="none"/>
+			<TabWidget android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@android:id/tabs"
+			    />
+				<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@android:id/tabcontent"
+				    >
+					<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/content1"
+						android:background="@drawable/listitem01">
+						<Button
+							android:id="@+id/negativeskill00"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:textColor="#ffffffff"
+							android:background="@drawable/btnimage_negative"
+							android:text="@string/negative_button" />
+					    <ListView android:layout_width="match_parent" android:id="@+id/listView0" android:layout_height="fill_parent"/>
+					</LinearLayout>
+					<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/content2"
+						android:background="@drawable/listitem01">
+						<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:background="@drawable/listitem01">
+					    <Button
+							android:id="@+id/setchoicebtn01"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:background="@drawable/btnimage_search"
+							android:text="@string/setchoice_button" />
+						<Button
+							android:id="@+id/negativeskill01"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:textColor="#ffffffff"
+							android:background="@drawable/btnimage_negative"
+							android:text="@string/negative_button" />
+					    </LinearLayout>
+						<ListView android:layout_width="match_parent" android:id="@+id/listView1" android:layout_height="fill_parent"/>
+					</LinearLayout>
+					<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/content3"
+						android:background="@drawable/listitem01">
+						<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:background="@drawable/listitem01">
+					    <Button
+							android:id="@+id/setchoicebtn02"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:background="@drawable/btnimage_search"
+							android:text="@string/setchoice_button" />
+						<Button
+							android:id="@+id/negativeskill02"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:textColor="#ffffffff"
+							android:background="@drawable/btnimage_negative"
+							android:text="@string/negative_button" />
+					    </LinearLayout>
+						<ListView android:layout_width="match_parent" android:id="@+id/listView2" android:layout_height="fill_parent"/>
+					</LinearLayout>
+					<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/content4"
+						android:background="@drawable/listitem01">
+						<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:background="@drawable/listitem01">
+					    <Button
+							android:id="@+id/setchoicebtn03"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:background="@drawable/btnimage_search"
+							android:text="@string/setchoice_button" />
+						<Button
+							android:id="@+id/negativeskill03"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:textColor="#ffffffff"
+							android:background="@drawable/btnimage_negative"
+							android:text="@string/negative_button" />
+					    </LinearLayout>
+					    <ListView android:layout_width="match_parent" android:id="@+id/listView3" android:layout_height="fill_parent"/>
+					</LinearLayout>
+					<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/content5"
+						android:background="@drawable/listitem01">
+						<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:background="@drawable/listitem01">
+					    <Button
+							android:id="@+id/setchoicebtn04"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:background="@drawable/btnimage_search"
+							android:text="@string/setchoice_button" />
+						<Button
+							android:id="@+id/negativeskill04"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:textColor="#ffffffff"
+							android:background="@drawable/btnimage_negative"
+							android:text="@string/negative_button" />
+					    </LinearLayout>
+						<ListView android:layout_width="match_parent" android:id="@+id/listView4" android:layout_height="fill_parent"/>
+					</LinearLayout>
+					<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/content6"
+						android:background="@drawable/listitem01">
+						<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:background="@drawable/listitem01">
+   						<Button
+							android:id="@+id/setchoicebtn05"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:background="@drawable/btnimage_search"
+							android:text="@string/setchoice_button" />
+						<Button
+							android:id="@+id/negativeskill05"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:textColor="#ffffffff"
+							android:background="@drawable/btnimage_negative"
+							android:text="@string/negative_button" />
+   						</LinearLayout>
+						<ListView android:layout_width="match_parent" android:id="@+id/listView5" android:layout_height="fill_parent"/>
+					</LinearLayout>
+					<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/content7"
+						android:background="@drawable/listitem01">
+						<Button
+							android:id="@+id/negativeskill06"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:textColor="#ffffffff"
+							android:background="@drawable/btnimage_negative"
+							android:text="@string/negative_button" />
+					    <ListView android:layout_width="match_parent" android:id="@+id/listView6" android:layout_height="fill_parent"/>
+					</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/content8"
+				android:orientation="vertical"
+				android:background="@drawable/listitem01">
+				<LinearLayout
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<Button
+						android:id="@+id/btnControl0" android:layout_weight="1"
+						android:text="@string/title_edit" android:background="@drawable/btnimage_nrm"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+				    <Button
+						android:id="@+id/btnControl1" android:layout_weight="1"
+						android:text="@string/gender_item" android:background="@drawable/btnimage_nrm"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+					<Button
+						android:id="@+id/btnControl2" android:layout_weight="1"
+						android:text="@string/tergetskill" android:background="@drawable/btnimage_nrm"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+				</LinearLayout>
+				<ScrollView android:id="@+id/svResult" android:layout_width="fill_parent" android:layout_height="fill_parent">
+					<WebView android:id="@+id/tvResult"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						/>
+				</ScrollView>
+			</LinearLayout>
+				</FrameLayout>
+		</LinearLayout>
+	</TabHost>
+</LinearLayout>

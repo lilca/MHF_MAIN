@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="キャラ情報">
+	<ListPreference
+		android:key="list_preference"
+		android:title="性別"
+		android:summary="設定なし"
+		android:defaultValue="男"
+		android:entries="@array/entrysex_list_preference"
+		android:entryValues="@array/entrysex_list_preference"
+		android:dialogTitle="性別" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="アイテム情報">
+	<CheckBoxPreference
+		android:key="chk_prefer_pwgo"
+		android:title="力の護符"
+		android:summary=""/>
+	<CheckBoxPreference
+		android:key="chk_prefer_pwnl"
+		android:title="力の爪"
+		android:summary=""/>
+	<CheckBoxPreference
+		android:key="chk_prefer_dfgo"
+		android:title="守りの護符"
+		android:summary=""/>
+	<CheckBoxPreference
+		android:key="chk_prefer_dfnl"
+		android:title="守りの爪"
+		android:summary=""/>
+	</PreferenceCategory>
+</PreferenceScreen>

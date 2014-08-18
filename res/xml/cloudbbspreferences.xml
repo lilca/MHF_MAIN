@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="条件">
+	<EditTextPreference
+		android:key="bbs_keyword_preference"
+		android:title="キーワード"
+		android:summary="設定なし"
+		android:dialogTitle="キーワード" />
+	<ListPreference
+		android:key="bbs_level_preference"
+		android:title="クエストレベル"
+		android:summary="設定なし"
+		android:dialogTitle="クエストレベル"
+		android:entries="@array/questlevel"
+		android:entryValues="@array/questlevel"/>
+	<ListPreference
+		android:key="bbs_monster_preference"
+		android:title="対象モンスター"
+		android:summary="設定なし"
+		android:dialogTitle="対象モンスター"
+		android:entries="@array/monster"
+		android:entryValues="@array/monster"/>
+	<ListPreference
+		android:key="bbs_storategy_preference"
+		android:title="戦略"
+		android:summary="設定なし"
+		android:dialogTitle="戦略"
+		android:entries="@array/storategy"
+		android:entryValues="@array/storategy"/>
+	<ListPreference
+		android:key="bbs_weapon_preference"
+		android:title="武器"
+		android:summary="設定なし"
+		android:dialogTitle="武器"
+		android:entries="@array/weapon"
+		android:entryValues="@array/weapon"/>
+		</PreferenceCategory>
+</PreferenceScreen>

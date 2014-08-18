@@ -1,0 +1,1200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="カフ条件">
+	<EditTextPreference
+		android:key="edittext_preference_kafus"
+		android:title="名称（部分一致）"
+		android:summary="設定なし"
+		android:dialogTitle="名称（部分一致）" />
+	<ListPreference
+		android:key="list_preference8_kafus"
+		android:title="カフタイプ"
+		android:summary="すべて"
+		android:defaultValue="すべて"
+		android:entries="@array/entrytype_list_preference"
+		android:entryValues="@array/entrytype_list_preference"
+		android:dialogTitle="カフタイプ" />
+	<ListPreference
+		android:key="list_preference4_kafus"
+		android:title="スロット数（以下）"
+		android:summary="設定なし"
+		android:defaultValue="2"
+		android:entries="@array/entryslot_list_preference"
+		android:entryValues="@array/entryslot_list_preference"
+		android:dialogTitle="スロット数（以下）" />
+	<ListPreference
+		android:key="list_preference7_kafus"
+		android:title="スキルゲイン（以上）"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entrygain_list_preference"
+		android:entryValues="@array/entrygain_list_preference"
+		android:dialogTitle="スキルゲイン（以上）" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="スキル条件（以上）">
+	<PreferenceScreen android:title="体力・スタミナ系"
+		android:key="ctg_skill_preference01_kafus"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0101_kafus"
+		android:title="回復速度"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="回復速度" />
+	<ListPreference
+		android:key="list_skill_preference0102_kafus"
+		android:title="体力"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="体力" />
+	<ListPreference
+		android:key="list_skill_preference0103_kafus"
+		android:title="はらへり"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="はらへり" />
+	<ListPreference
+		android:key="list_skill_preference0104_kafus"
+		android:title="回復"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="回復" />
+	<ListPreference
+		android:key="list_skill_preference0105_kafus"
+		android:title="スタミナ"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="スタミナ" />
+	<ListPreference
+		android:key="list_skill_preference0106_kafus"
+		android:title="食事"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="食事" />
+	<ListPreference
+		android:key="list_skill_preference0107_kafus"
+		android:title="食いしん坊"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="食いしん坊" />
+	<ListPreference
+		android:key="list_skill_preference0108_kafus"
+		android:title="とんずら"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="とんずら" />
+	<ListPreference
+		android:key="list_skill_preference0109_kafus"
+		android:title="気力回復"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="気力回復" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="攻撃系"
+		android:key="ctg_skill_preference02_kafus"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0201_kafus"
+		android:title="攻撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="攻撃" />
+	<ListPreference
+		android:key="list_skill_preference0202_kafus"
+		android:title="特殊攻撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="特殊攻撃" />
+	<ListPreference
+		android:key="list_skill_preference0203_kafus"
+		android:title="爆弾強化"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="爆弾強化" />
+	<ListPreference
+		android:key="list_skill_preference0204_kafus"
+		android:title="砲術師"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="砲術師" />
+	<ListPreference
+		android:key="list_skill_preference0205_kafus"
+		android:title="底力"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="底力" />
+	<ListPreference
+		android:key="list_skill_preference0206_kafus"
+		android:title="達人"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="達人" />
+	<ListPreference
+		android:key="list_skill_preference0207_kafus"
+		android:title="体術"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="体術" />
+	<ListPreference
+		android:key="list_skill_preference0208_kafus"
+		android:title="絆"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="絆" />
+	<ListPreference
+		android:key="list_skill_preference0209_kafus"
+		android:title="火属性攻撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="火属性攻撃" />
+	<ListPreference
+		android:key="list_skill_preference0210_kafus"
+		android:title="水属性攻撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="水属性攻撃" />
+	<ListPreference
+		android:key="list_skill_preference0211_kafus"
+		android:title="雷属性攻撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="雷属性攻撃" />
+	<ListPreference
+		android:key="list_skill_preference0212_kafus"
+		android:title="氷属性攻撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="氷属性攻撃" />
+	<ListPreference
+		android:key="list_skill_preference0213_kafus"
+		android:title="龍属性攻撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="龍属性攻撃" />
+	<ListPreference
+		android:key="list_skill_preference0214_kafus"
+		android:title="断食"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="断食" />
+	<ListPreference
+		android:key="list_skill_preference0215_kafus"
+		android:title="溜め短縮"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="溜め短縮" />
+	<ListPreference
+		android:key="list_skill_preference0216_kafus"
+		android:title="武器捌き"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="武器捌き" />
+	<ListPreference
+		android:key="list_skill_preference0217_kafus"
+		android:title="属性攻撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="属性攻撃" />
+	<ListPreference
+		android:key="list_skill_preference0218_kafus"
+		android:title="剛撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="剛撃" />
+	<ListPreference
+		android:key="list_skill_preference0219_kafus"
+		android:title="一閃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="一閃" />
+	<ListPreference
+		android:key="list_skill_preference0220_kafus"
+		android:title="痛撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="痛撃" />
+	<ListPreference
+		android:key="list_skill_preference0221_kafus"
+		android:title="逆境"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="逆境" />
+	<ListPreference
+		android:key="list_skill_preference0222_kafus"
+		android:title="一匹狼"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="一匹狼" />
+	<ListPreference
+		android:key="list_skill_preference0223_kafus"
+		android:title="怒"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="怒" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="防御系"
+		android:key="ctg_skill_preference03_kafus"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0301_kafus"
+		android:title="防御"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="防御" />
+	<ListPreference
+		android:key="list_skill_preference0302_kafus"
+		android:title="ガード性能"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="ガード性能" />
+	<ListPreference
+		android:key="list_skill_preference0303_kafus"
+		android:title="自動防御"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="自動防御" />
+	<ListPreference
+		android:key="list_skill_preference0304_kafus"
+		android:title="生命力"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="生命力" />
+	<ListPreference
+		android:key="list_skill_preference0305_kafus"
+		android:title="反射"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="反射" />
+		</PreferenceScreen>
+	<PreferenceScreen android:title="剣士系"
+		android:key="ctg_skill_preference04_kafus"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0401_kafus"
+		android:title="斬れ味"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="斬れ味" />
+	<ListPreference
+		android:key="list_skill_preference0402_kafus"
+		android:title="匠"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="匠" />
+	<ListPreference
+		android:key="list_skill_preference0403_kafus"
+		android:title="研ぎ師"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="研ぎ師" />
+	<ListPreference
+		android:key="list_skill_preference0404_kafus"
+		android:title="爆撃剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="爆撃剣" />
+	<ListPreference
+		android:key="list_skill_preference0405_kafus"
+		android:title="猛毒剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="猛毒剣" />
+	<ListPreference
+		android:key="list_skill_preference0406_kafus"
+		android:title="麻痺剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="麻痺剣" />
+	<ListPreference
+		android:key="list_skill_preference0407_kafus"
+		android:title="睡眠剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="睡眠剣" />
+	<ListPreference
+		android:key="list_skill_preference0408_kafus"
+		android:title="火炎剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="火炎剣" />
+	<ListPreference
+		android:key="list_skill_preference0409_kafus"
+		android:title="水激剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="水激剣" />
+	<ListPreference
+		android:key="list_skill_preference0410_kafus"
+		android:title="雷神剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="雷神剣" />
+	<ListPreference
+		android:key="list_skill_preference0411_kafus"
+		android:title="氷結剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="氷結剣" />
+	<ListPreference
+		android:key="list_skill_preference0412_kafus"
+		android:title="龍王剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="龍王剣" />
+	<ListPreference
+		android:key="list_skill_preference0413_kafus"
+		android:title="剣術"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="剣術" />
+		</PreferenceScreen>
+	<PreferenceScreen android:title="ガンナー系"
+		android:key="ctg_skill_preference05_kafus"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0501_kafus"
+		android:title="通常弾強化"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="通常弾強化" />
+	<ListPreference
+		android:key="list_skill_preference0502_kafus"
+		android:title="貫通弾強化"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="貫通弾強化" />
+	<ListPreference
+		android:key="list_skill_preference0503_kafus"
+		android:title="散弾強化"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="散弾強化" />
+	<ListPreference
+		android:key="list_skill_preference0504_kafus"
+		android:title="通常弾追加"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="通常弾追加" />
+	<ListPreference
+		android:key="list_skill_preference0505_kafus"
+		android:title="貫通弾追加"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="貫通弾追加" />
+	<ListPreference
+		android:key="list_skill_preference0506_kafus"
+		android:title="散弾追加"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="散弾追加" />
+	<ListPreference
+		android:key="list_skill_preference0507_kafus"
+		android:title="溜弾追加"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="溜弾追加" />
+	<ListPreference
+		android:key="list_skill_preference0508_kafus"
+		android:title="拡散弾追加"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="拡散弾追加" />
+	<ListPreference
+		android:key="list_skill_preference0509_kafus"
+		android:title="毒瓶追加"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="毒瓶追加" />
+	<ListPreference
+		android:key="list_skill_preference0510_kafus"
+		android:title="麻痺瓶追加"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="麻痺瓶追加" />
+	<ListPreference
+		android:key="list_skill_preference0511_kafus"
+		android:title="睡眠瓶追加"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="睡眠瓶追加" />
+	<ListPreference
+		android:key="list_skill_preference0512_kafus"
+		android:title="装填数"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="装填数" />
+	<ListPreference
+		android:key="list_skill_preference0513_kafus"
+		android:title="連射"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="連射" />
+	<ListPreference
+		android:key="list_skill_preference0514_kafus"
+		android:title="装填"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="装填" />
+	<ListPreference
+		android:key="list_skill_preference0515_kafus"
+		android:title="反動"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="反動" />
+	<ListPreference
+		android:key="list_skill_preference0516_kafus"
+		android:title="精密射撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="精密射撃" />
+	<ListPreference
+		android:key="list_skill_preference0517_kafus"
+		android:title="弾調合"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="弾調合" />
+	<ListPreference
+		android:key="list_skill_preference0518_kafus"
+		android:title="速射"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="速射" />
+	<ListPreference
+		android:key="list_skill_preference0519_kafus"
+		android:title="装着"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="装着" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="耐性系"
+		android:key="ctg_skill_preference06_kafus"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0601_kafus"
+		android:title="全耐性UP"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="全耐性UP" />
+	<ListPreference
+		android:key="list_skill_preference0602_kafus"
+		android:title="火耐性"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="火耐性" />
+	<ListPreference
+		android:key="list_skill_preference0603_kafus"
+		android:title="水耐性"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="水耐性" />
+	<ListPreference
+		android:key="list_skill_preference0604_kafus"
+		android:title="氷耐性"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="氷耐性" />
+	<ListPreference
+		android:key="list_skill_preference0605_kafus"
+		android:title="雷耐性"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="雷耐性" />
+	<ListPreference
+		android:key="list_skill_preference0606_kafus"
+		android:title="龍耐性"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="龍耐性" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="状態異常系"
+		android:key="ctg_skill_preference07_kafus"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0701_kafus"
+		android:title="毒"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="毒" />
+	<ListPreference
+		android:key="list_skill_preference0702_kafus"
+		android:title="麻痺"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="麻痺" />
+	<ListPreference
+		android:key="list_skill_preference0703_kafus"
+		android:title="睡眠"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="睡眠" />
+	<ListPreference
+		android:key="list_skill_preference0704_kafus"
+		android:title="気絶"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="気絶" />
+	<ListPreference
+		android:key="list_skill_preference0705_kafus"
+		android:title="脱臭"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="脱臭" />
+	<ListPreference
+		android:key="list_skill_preference0706_kafus"
+		android:title="耐雪"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="耐雪" />
+	<ListPreference
+		android:key="list_skill_preference0707_kafus"
+		android:title="声帯"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="声帯" />
+	<ListPreference
+		android:key="list_skill_preference0708_kafus"
+		android:title="対防御DOWN"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="対防御DOWN" />
+	<ListPreference
+		android:key="list_skill_preference0709_kafus"
+		android:title="耐状態異常"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="耐状態異常" />
+	<ListPreference
+		android:key="list_skill_preference0710_kafus"
+		android:title="耐酔"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="耐酔" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="その他のダメージ保護系"
+		android:key="ctg_skill_preference08_kafus"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0801_kafus"
+		android:title="聴覚保護"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="聴覚保護" />
+	<ListPreference
+		android:key="list_skill_preference0802_kafus"
+		android:title="風圧"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="風圧" />
+	<ListPreference
+		android:key="list_skill_preference0803_kafus"
+		android:title="耐震"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="耐震" />
+	<ListPreference
+		android:key="list_skill_preference0804_kafus"
+		android:title="回避性能"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="回避性能" />
+	<ListPreference
+		android:key="list_skill_preference0805_kafus"
+		android:title="耐暑"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="耐暑" />
+	<ListPreference
+		android:key="list_skill_preference0806_kafus"
+		android:title="耐寒"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="耐寒" />
+	<ListPreference
+		android:key="list_skill_preference0807_kafus"
+		android:title="盗み無効"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="盗み無効" />
+	<ListPreference
+		android:key="list_skill_preference0808_kafus"
+		android:title="地形"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="地形" />
+	<ListPreference
+		android:key="list_skill_preference0809_kafus"
+		android:title="審判"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="審判" />
+	<ListPreference
+		android:key="list_skill_preference0810_kafus"
+		android:title="ひらめき"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="ひらめき" />
+	<ListPreference
+		android:key="list_skill_preference0811_kafus"
+		android:title="受け身"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="受け身" />
+	<ListPreference
+		android:key="list_skill_preference0812_kafus"
+		android:title="根性"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="根性" />
+	<ListPreference
+		android:key="list_skill_preference0813_kafus"
+		android:title="警戒"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="警戒" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="アイテム使用・調合系"
+		android:key="ctg_skill_preference09_kafus"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0901_kafus"
+		android:title="広域"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="広域" />
+	<ListPreference
+		android:key="list_skill_preference0902_kafus"
+		android:title="効果持続"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="効果持続" />
+	<ListPreference
+		android:key="list_skill_preference0903_kafus"
+		android:title="気まぐれ"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="気まぐれ" />
+	<ListPreference
+		android:key="list_skill_preference0904_kafus"
+		android:title="投擲"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="投擲" />
+	<ListPreference
+		android:key="list_skill_preference0905_kafus"
+		android:title="肉焼き"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="肉焼き" />
+	<ListPreference
+		android:key="list_skill_preference0906_kafus"
+		android:title="釣り"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="釣り" />
+	<ListPreference
+		android:key="list_skill_preference0907_kafus"
+		android:title="調合成功率"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="調合成功率" />
+	<ListPreference
+		android:key="list_skill_preference0908_kafus"
+		android:title="錬金術"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="錬金術" />
+	<ListPreference
+		android:key="list_skill_preference0909_kafus"
+		android:title="強肩"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="強肩" />
+	<ListPreference
+		android:key="list_skill_preference0910_kafus"
+		android:title="笛吹き名人"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="笛吹き名人" />
+	<ListPreference
+		android:key="list_skill_preference0911_kafus"
+		android:title="高速設置"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="高速設置" />
+	<ListPreference
+		android:key="list_skill_preference0912_kafus"
+		android:title="ナイフ使い"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="ナイフ使い" />
+	<ListPreference
+		android:key="list_skill_preference0913_kafus"
+		android:title="調合師"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="調合師" />
+	<ListPreference
+		android:key="list_skill_preference0914_kafus"
+		android:title="狩人"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="狩人" />
+	<ListPreference
+		android:key="list_skill_preference0915_kafus"
+		android:title="鼓舞"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="鼓舞" />
+	<ListPreference
+		android:key="list_skill_preference0916_kafus"
+		android:title="鉄腕"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="鉄腕" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="マップ・探知系"
+		android:key="ctg_skill_preference10_kafus"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference1001_kafus"
+		android:title="千里眼"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="千里眼" />
+	<ListPreference
+		android:key="list_skill_preference1002_kafus"
+		android:title="地図"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="地図" />
+	<ListPreference
+		android:key="list_skill_preference1003_kafus"
+		android:title="気配"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="気配" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="採集・運搬系"
+		android:key="ctg_skill_preference11_kafus"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference1101_kafus"
+		android:title="高速収集"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="高速収集" />
+	<ListPreference
+		android:key="list_skill_preference1102_kafus"
+		android:title="剥ぎ取り"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="剥ぎ取り" />
+	<ListPreference
+		android:key="list_skill_preference1103_kafus"
+		android:title="運搬"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="運搬" />
+	<ListPreference
+		android:key="list_skill_preference1104_kafus"
+		android:title="採取"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="採取" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="報酬・モンスター系"
+		android:key="ctg_skill_preference12_kafus"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference1201_kafus"
+		android:title="運気"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="運気" />
+	<ListPreference
+		android:key="list_skill_preference1202_kafus"
+		android:title="モンスター"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="モンスター" />
+	<ListPreference
+		android:key="list_skill_preference1203_kafus"
+		android:title="圧力"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="圧力" />
+	<ListPreference
+		android:key="list_skill_preference1204_kafus"
+		android:title="捕獲上手"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="捕獲上手" />
+	<ListPreference
+		android:key="list_skill_preference1205_kafus"
+		android:title="いたわり"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="いたわり" />
+	<ListPreference
+		android:key="list_skill_preference1206_kafus"
+		android:title="ブリーダー"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="ブリーダー" />
+	<ListPreference
+		android:key="list_skill_preference1207_kafus"
+		android:title="救援"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="救援" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="技系"
+		android:key="ctg_skill_preference13_kafus"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference1301_kafus"
+		android:title="片手剣技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="片手剣技" />
+	<ListPreference
+		android:key="list_skill_preference1302_kafus"
+		android:title="双剣技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="双剣技" />
+	<ListPreference
+		android:key="list_skill_preference1303_kafus"
+		android:title="大剣技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="大剣技" />
+	<ListPreference
+		android:key="list_skill_preference1304_kafus"
+		android:title="太刀技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="太刀技" />
+	<ListPreference
+		android:key="list_skill_preference1305_kafus"
+		android:title="鎚技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="鎚技" />
+	<ListPreference
+		android:key="list_skill_preference1306_kafus"
+		android:title="狩猟笛技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="狩猟笛技" />
+	<ListPreference
+		android:key="list_skill_preference1307_kafus"
+		android:title="槍技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="槍技" />
+	<ListPreference
+		android:key="list_skill_preference1308_kafus"
+		android:title="銃槍技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="銃槍技" />
+	<ListPreference
+		android:key="list_skill_preference1309_kafus"
+		android:title="軽銃技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="軽銃技" />
+	<ListPreference
+		android:key="list_skill_preference1310_kafus"
+		android:title="重銃技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="重銃技" />
+	<ListPreference
+		android:key="list_skill_preference1311_kafus"
+		android:title="弓技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="弓技" />
+	</PreferenceScreen>
+	</PreferenceCategory>
+</PreferenceScreen>

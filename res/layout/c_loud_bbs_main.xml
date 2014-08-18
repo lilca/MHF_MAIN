@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+    <TabHost android:id="@android:id/tabhost" android:layout_width="match_parent" android:layout_height="match_parent">
+		<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+			<mediba.ad.sdk.android.openx.MasAdView
+				android:id="@+id/adview"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:scrollbars="none"/>
+	<LinearLayout
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical">
+	<Button
+		android:id="@+id/btnBBSCond" android:layout_weight="1"
+		android:text="@string/search" android:background="@drawable/btnimage_nrm"
+		android:layout_width="fill_parent" android:layout_height="0dip"/>
+    <TextView
+    	android:id="@+id/idbbscond"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_margin="0.2sp" 
+        android:textSize="12sp" 
+        /> 
+    </LinearLayout>
+			<TabWidget android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@android:id/tabs"/>
+				<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@android:id/tabcontent">
+					<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/content1"
+						android:background="@drawable/bg">
+					    <ListView android:layout_width="match_parent" android:id="@+id/listView1" android:layout_height="fill_parent"></ListView>
+					</LinearLayout>
+					<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/content2"
+						android:background="@drawable/bg">
+						<ListView android:layout_width="match_parent" android:id="@+id/listView2" android:layout_height="fill_parent"></ListView>
+					</LinearLayout>
+									</FrameLayout>
+		</LinearLayout>
+	</TabHost>
+</LinearLayout>

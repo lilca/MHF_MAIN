@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="武具条件">
+	<ListPreference
+		android:key="list_preference_bougutype_buki"
+		android:title="種類"
+		android:summary=""
+		android:defaultValue="すべて"
+		android:entries="@array/entriesnewtypeonbuki_list_preference"
+		android:entryValues="@array/entriesnewtypeonbuki_list_preference"
+		android:dialogTitle="種類" />
+	<ListPreference
+		android:key="list_preference_buki"
+		android:title="武器種類選択"
+		android:summary="設定なし"
+		android:defaultValue="すべて"
+		android:entries="@array/entries_buki_with_all"
+		android:entryValues="@array/entries_buki_with_all"
+		android:dialogTitle="武器種類選択" />
+	<EditTextPreference
+		android:key="edittext_preference_buki"
+		android:title="名称（部分一致）"
+		android:summary="設定なし"
+		android:dialogTitle="名称（部分一致）" />
+	<ListPreference
+		android:key="list_preference4_buki"
+		android:title="スロット数（以上）"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryslot_list_preference"
+		android:entryValues="@array/entryslot_list_preference"
+		android:dialogTitle="スロット数（以上）" />
+	<ListPreference
+		android:key="list_preference5_buki"
+		android:title="防御（以上）"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entrydef_list_preference"
+		android:entryValues="@array/entrydef_list_preference"
+		android:dialogTitle="防御（以上）" />
+	<ListPreference
+		android:key="list_preference6_buki"
+		android:title="レア度（以下）"
+		android:summary="設定なし"
+		android:defaultValue="20"
+		android:entries="@array/entryrare_list_preference"
+		android:entryValues="@array/entryrare_list_preference"
+		android:dialogTitle="レア度（以下）" />
+	<ListPreference
+		android:key="list_preference7_buki"
+		android:title="会心率（以上）"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entrykaishin_list_preference"
+		android:entryValues="@array/entrykaishin_list_preference"
+		android:dialogTitle="会心率（以上）" />
+	<ListPreference
+		android:key="list_preference8_buki"
+		android:title="リーチ（以上）"
+		android:summary="設定なし"
+		android:defaultValue=""
+		android:entries="@array/entryreach_list_preference"
+		android:entryValues="@array/entryreach_list_preference"
+		android:dialogTitle="リーチ（以上）" />
+	<ListPreference
+		android:key="list_preference9_buki"
+		android:title="攻撃（以上）"
+		android:summary="設定なし"
+		android:defaultValue=""
+		android:entries="@array/entryattack_list_preference"
+		android:entryValues="@array/entryattack_list_preference"
+		android:dialogTitle="攻撃（以上）" />
+	<ListPreference
+		android:key="list_preference11_buki"
+		android:title="武器倍率後（以上）"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entrybukibai_list_preference"
+		android:entryValues="@array/entrybukibai_list_preference"
+		android:dialogTitle="武器倍率後（以上）" />
+	<ListPreference
+		android:key="list_preference12_buki"
+		android:title="属性攻撃"
+		android:summary="設定なし"
+		android:defaultValue="なし"
+		android:entries="@array/entryattr_list_preference"
+		android:entryValues="@array/entryattr_list_preference"
+		android:dialogTitle="属性攻撃" />
+	<ListPreference
+		android:key="list_preference13_buki"
+		android:title="異常属性攻撃"
+		android:summary="設定なし"
+		android:defaultValue="なし"
+		android:entries="@array/entryspattr_list_preference"
+		android:entryValues="@array/entryspattr_list_preference"
+		android:dialogTitle="異常属性攻撃" />
+	</PreferenceCategory>
+</PreferenceScreen>

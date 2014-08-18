@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title">#000000</color>
+    <color name="orange">#ff6600</color>
+    <color name="bgclr">#ffffff</color>
+    <color name="fntclr">#000000</color>
+    <color name="fnth1clr">#ffff00</color>
+    <color name="fnth2clr">#00ff00</color>
+</resources>

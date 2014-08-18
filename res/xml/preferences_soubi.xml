@@ -1,0 +1,1242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="キャラ条件">
+	<ListPreference
+		android:key="list_preference2_soubi"
+		android:title="タイプ"
+		android:summary="設定なし"
+		android:defaultValue="剣士"
+		android:entries="@array/entriestype_list_preference"
+		android:entryValues="@array/entriestype_list_preference"
+		android:dialogTitle="タイプ選択" />
+	<ListPreference
+		android:key="list_preference3_soubi"
+		android:title="性別"
+		android:summary="設定なし"
+		android:defaultValue="男"
+		android:entries="@array/entrysex_list_preference"
+		android:entryValues="@array/entrysex_list_preference"
+		android:dialogTitle="性別" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="武具条件">
+	<ListPreference
+		android:key="list_preference_bougutype_soubi"
+		android:title="種類"
+		android:summary=""
+		android:defaultValue="すべて"
+		android:entries="@array/entriesnewtype_list_preference"
+		android:entryValues="@array/entriesnewtype_list_preference"
+		android:dialogTitle="種類" />
+	<ListPreference
+		android:key="list_preference_soubi"
+		android:title="部位選択"
+		android:summary="設定なし"
+		android:defaultValue="すべて"
+		android:entries="@array/entriespart_list_preference"
+		android:entryValues="@array/entriespart_list_preference"
+		android:dialogTitle="部位選択" />
+	<EditTextPreference
+		android:key="edittext_preference_soubi"
+		android:title="名称（部分一致）"
+		android:summary="設定なし"
+		android:dialogTitle="名称（部分一致）" />
+	<ListPreference
+		android:key="list_preference4_soubi"
+		android:title="スロット数（以上）"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryslot_list_preference"
+		android:entryValues="@array/entryslot_list_preference"
+		android:dialogTitle="スロット数（以上）" />
+	<ListPreference
+		android:key="list_preference5_soubi"
+		android:title="防御（以上）"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entrydef_list_preference"
+		android:entryValues="@array/entrydef_list_preference"
+		android:dialogTitle="防御（以上）" />
+	<ListPreference
+		android:key="list_preference6_soubi"
+		android:title="レア度（以下）"
+		android:summary="設定なし"
+		android:defaultValue="20"
+		android:entries="@array/entryrare_list_preference"
+		android:entryValues="@array/entryrare_list_preference"
+		android:dialogTitle="レア度（以下）" />
+	<ListPreference
+		android:key="list_preference7_soubi"
+		android:title="スキルゲイン（以上）"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entrygain_list_preference"
+		android:entryValues="@array/entrygain_list_preference"
+		android:dialogTitle="スキルゲイン（以上）" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="スキル条件（以上）">
+	<PreferenceScreen android:title="体力・スタミナ系"
+		android:key="ctg_skill_preference01_soubi"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0101_soubi"
+		android:title="回復速度"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="回復速度" />
+	<ListPreference
+		android:key="list_skill_preference0102_soubi"
+		android:title="体力"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="体力" />
+	<ListPreference
+		android:key="list_skill_preference0103_soubi"
+		android:title="はらへり"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="はらへり" />
+	<ListPreference
+		android:key="list_skill_preference0104_soubi"
+		android:title="回復"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="回復" />
+	<ListPreference
+		android:key="list_skill_preference0105_soubi"
+		android:title="スタミナ"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="スタミナ" />
+	<ListPreference
+		android:key="list_skill_preference0106_soubi"
+		android:title="食事"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="食事" />
+	<ListPreference
+		android:key="list_skill_preference0107_soubi"
+		android:title="食いしん坊"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="食いしん坊" />
+	<ListPreference
+		android:key="list_skill_preference0108_soubi"
+		android:title="とんずら"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="とんずら" />
+	<ListPreference
+		android:key="list_skill_preference0109_soubi"
+		android:title="気力回復"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="気力回復" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="攻撃系"
+		android:key="ctg_skill_preference02_soubi"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0201_soubi"
+		android:title="攻撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="攻撃" />
+	<ListPreference
+		android:key="list_skill_preference0202_soubi"
+		android:title="特殊攻撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="特殊攻撃" />
+	<ListPreference
+		android:key="list_skill_preference0203_soubi"
+		android:title="爆弾強化"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="爆弾強化" />
+	<ListPreference
+		android:key="list_skill_preference0204_soubi"
+		android:title="砲術師"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="砲術師" />
+	<ListPreference
+		android:key="list_skill_preference0205_soubi"
+		android:title="底力"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="底力" />
+	<ListPreference
+		android:key="list_skill_preference0206_soubi"
+		android:title="達人"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="達人" />
+	<ListPreference
+		android:key="list_skill_preference0207_soubi"
+		android:title="体術"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="体術" />
+	<ListPreference
+		android:key="list_skill_preference0208_soubi"
+		android:title="絆"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="絆" />
+	<ListPreference
+		android:key="list_skill_preference0209_soubi"
+		android:title="火属性攻撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="火属性攻撃" />
+	<ListPreference
+		android:key="list_skill_preference0210_soubi"
+		android:title="水属性攻撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="水属性攻撃" />
+	<ListPreference
+		android:key="list_skill_preference0211_soubi"
+		android:title="雷属性攻撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="雷属性攻撃" />
+	<ListPreference
+		android:key="list_skill_preference0212_soubi"
+		android:title="氷属性攻撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="氷属性攻撃" />
+	<ListPreference
+		android:key="list_skill_preference0213_soubi"
+		android:title="龍属性攻撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="龍属性攻撃" />
+	<ListPreference
+		android:key="list_skill_preference0214_soubi"
+		android:title="断食"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="断食" />
+	<ListPreference
+		android:key="list_skill_preference0215_soubi"
+		android:title="溜め短縮"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="溜め短縮" />
+	<ListPreference
+		android:key="list_skill_preference0216_soubi"
+		android:title="武器捌き"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="武器捌き" />
+	<ListPreference
+		android:key="list_skill_preference0217_soubi"
+		android:title="属性攻撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="属性攻撃" />
+	<ListPreference
+		android:key="list_skill_preference0218_soubi"
+		android:title="剛撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="剛撃" />
+	<ListPreference
+		android:key="list_skill_preference0219_soubi"
+		android:title="一閃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="一閃" />
+	<ListPreference
+		android:key="list_skill_preference0220_soubi"
+		android:title="痛撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="痛撃" />
+	<ListPreference
+		android:key="list_skill_preference0221_soubi"
+		android:title="逆境"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="逆境" />
+	<ListPreference
+		android:key="list_skill_preference0222_soubi"
+		android:title="一匹狼"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="一匹狼" />
+	<ListPreference
+		android:key="list_skill_preference0223_soubi"
+		android:title="怒"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="怒" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="防御系"
+		android:key="ctg_skill_preference03_soubi"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0301_soubi"
+		android:title="防御"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="防御" />
+	<ListPreference
+		android:key="list_skill_preference0302_soubi"
+		android:title="ガード性能"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="ガード性能" />
+	<ListPreference
+		android:key="list_skill_preference0303_soubi"
+		android:title="自動防御"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="自動防御" />
+	<ListPreference
+		android:key="list_skill_preference0304_soubi"
+		android:title="生命力"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="生命力" />
+	<ListPreference
+		android:key="list_skill_preference0305_soubi"
+		android:title="反射"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="反射" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="剣士系"
+		android:key="ctg_skill_preference04_soubi"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0401_soubi"
+		android:title="斬れ味"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="斬れ味" />
+	<ListPreference
+		android:key="list_skill_preference0402_soubi"
+		android:title="匠"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="匠" />
+	<ListPreference
+		android:key="list_skill_preference0403_soubi"
+		android:title="研ぎ師"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="研ぎ師" />
+	<ListPreference
+		android:key="list_skill_preference0404_soubi"
+		android:title="爆撃剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="爆撃剣" />
+	<ListPreference
+		android:key="list_skill_preference0405_soubi"
+		android:title="猛毒剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="猛毒剣" />
+	<ListPreference
+		android:key="list_skill_preference0406_soubi"
+		android:title="麻痺剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="麻痺剣" />
+	<ListPreference
+		android:key="list_skill_preference0407_soubi"
+		android:title="睡眠剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="睡眠剣" />
+	<ListPreference
+		android:key="list_skill_preference0408_soubi"
+		android:title="火炎剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="火炎剣" />
+	<ListPreference
+		android:key="list_skill_preference0409_soubi"
+		android:title="水激剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="水激剣" />
+	<ListPreference
+		android:key="list_skill_preference0410_soubi"
+		android:title="雷神剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="雷神剣" />
+	<ListPreference
+		android:key="list_skill_preference0411_soubi"
+		android:title="氷結剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="氷結剣" />
+	<ListPreference
+		android:key="list_skill_preference0412_soubi"
+		android:title="龍王剣"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="龍王剣" />
+	<ListPreference
+		android:key="list_skill_preference0413_soubi"
+		android:title="剣術"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="剣術" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="ガンナー系"
+		android:key="ctg_skill_preference05_soubi"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0501_soubi"
+		android:title="通常弾強化"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="通常弾強化" />
+	<ListPreference
+		android:key="list_skill_preference0502_soubi"
+		android:title="貫通弾強化"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="貫通弾強化" />
+	<ListPreference
+		android:key="list_skill_preference0503_soubi"
+		android:title="散弾強化"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="散弾強化" />
+	<ListPreference
+		android:key="list_skill_preference0504_soubi"
+		android:title="通常弾追加"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="通常弾追加" />
+	<ListPreference
+		android:key="list_skill_preference0505_soubi"
+		android:title="貫通弾追加"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="貫通弾追加" />
+	<ListPreference
+		android:key="list_skill_preference0506_soubi"
+		android:title="散弾追加"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="散弾追加" />
+	<ListPreference
+		android:key="list_skill_preference0507_soubi"
+		android:title="溜弾追加"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="溜弾追加" />
+	<ListPreference
+		android:key="list_skill_preference0508_soubi"
+		android:title="拡散弾追加"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="拡散弾追加" />
+	<ListPreference
+		android:key="list_skill_preference0509_soubi"
+		android:title="毒瓶追加"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="毒瓶追加" />
+	<ListPreference
+		android:key="list_skill_preference0510_soubi"
+		android:title="麻痺瓶追加"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="麻痺瓶追加" />
+	<ListPreference
+		android:key="list_skill_preference0511_soubi"
+		android:title="睡眠瓶追加"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="睡眠瓶追加" />
+	<ListPreference
+		android:key="list_skill_preference0512_soubi"
+		android:title="装填数"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="装填数" />
+	<ListPreference
+		android:key="list_skill_preference0513_soubi"
+		android:title="連射"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="連射" />
+	<ListPreference
+		android:key="list_skill_preference0514_soubi"
+		android:title="装填"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="装填" />
+	<ListPreference
+		android:key="list_skill_preference0515_soubi"
+		android:title="反動"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="反動" />
+	<ListPreference
+		android:key="list_skill_preference0516_soubi"
+		android:title="精密射撃"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="精密射撃" />
+	<ListPreference
+		android:key="list_skill_preference0517_soubi"
+		android:title="弾調合"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="弾調合" />
+	<ListPreference
+		android:key="list_skill_preference0518_soubi"
+		android:title="速射"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="速射" />
+	<ListPreference
+		android:key="list_skill_preference0519_soubi"
+		android:title="装着"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="装着" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="耐性系"
+		android:key="ctg_skill_preference06_soubi"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0601_soubi"
+		android:title="全耐性UP"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="全耐性UP" />
+	<ListPreference
+		android:key="list_skill_preference0602_soubi"
+		android:title="火耐性"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="火耐性" />
+	<ListPreference
+		android:key="list_skill_preference0603_soubi"
+		android:title="水耐性"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="水耐性" />
+	<ListPreference
+		android:key="list_skill_preference0604_soubi"
+		android:title="氷耐性"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="氷耐性" />
+	<ListPreference
+		android:key="list_skill_preference0605_soubi"
+		android:title="雷耐性"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="雷耐性" />
+	<ListPreference
+		android:key="list_skill_preference0606_soubi"
+		android:title="龍耐性"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="龍耐性" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="状態異常系"
+		android:key="ctg_skill_preference07_soubi"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0701_soubi"
+		android:title="毒"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="毒" />
+	<ListPreference
+		android:key="list_skill_preference0702_soubi"
+		android:title="麻痺"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="麻痺" />
+	<ListPreference
+		android:key="list_skill_preference0703_soubi"
+		android:title="睡眠"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="睡眠" />
+	<ListPreference
+		android:key="list_skill_preference0704_soubi"
+		android:title="気絶"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="気絶" />
+	<ListPreference
+		android:key="list_skill_preference0705_soubi"
+		android:title="脱臭"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="脱臭" />
+	<ListPreference
+		android:key="list_skill_preference0706_soubi"
+		android:title="耐雪"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="耐雪" />
+	<ListPreference
+		android:key="list_skill_preference0707_soubi"
+		android:title="声帯"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="声帯" />
+	<ListPreference
+		android:key="list_skill_preference0708_soubi"
+		android:title="対防御DOWN"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="対防御DOWN" />
+	<ListPreference
+		android:key="list_skill_preference0709_soubi"
+		android:title="耐状態異常"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="耐状態異常" />
+	<ListPreference
+		android:key="list_skill_preference0710_soubi"
+		android:title="耐酔"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="耐酔" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="その他のダメージ保護系"
+		android:key="ctg_skill_preference08_soubi"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0801_soubi"
+		android:title="聴覚保護"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="聴覚保護" />
+	<ListPreference
+		android:key="list_skill_preference0802_soubi"
+		android:title="風圧"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="風圧" />
+	<ListPreference
+		android:key="list_skill_preference0803_soubi"
+		android:title="耐震"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="耐震" />
+	<ListPreference
+		android:key="list_skill_preference0804_soubi"
+		android:title="回避性能"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="回避性能" />
+	<ListPreference
+		android:key="list_skill_preference0805_soubi"
+		android:title="耐暑"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="耐暑" />
+	<ListPreference
+		android:key="list_skill_preference0806_soubi"
+		android:title="耐寒"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="耐寒" />
+	<ListPreference
+		android:key="list_skill_preference0807_soubi"
+		android:title="盗み無効"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="盗み無効" />
+	<ListPreference
+		android:key="list_skill_preference0808_soubi"
+		android:title="地形"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="地形" />
+	<ListPreference
+		android:key="list_skill_preference0809_soubi"
+		android:title="審判"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="審判" />
+	<ListPreference
+		android:key="list_skill_preference0810_soubi"
+		android:title="ひらめき"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="ひらめき" />
+	<ListPreference
+		android:key="list_skill_preference0811_soubi"
+		android:title="受け身"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="受け身" />
+	<ListPreference
+		android:key="list_skill_preference0812_soubi"
+		android:title="根性"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="根性" />
+	<ListPreference
+		android:key="list_skill_preference0813_soubi"
+		android:title="警戒"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="警戒" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="アイテム使用・調合系"
+		android:key="ctg_skill_preference09_soubi"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference0901_soubi"
+		android:title="広域"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="広域" />
+	<ListPreference
+		android:key="list_skill_preference0902_soubi"
+		android:title="効果持続"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="効果持続" />
+	<ListPreference
+		android:key="list_skill_preference0903_soubi"
+		android:title="気まぐれ"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="気まぐれ" />
+	<ListPreference
+		android:key="list_skill_preference0904_soubi"
+		android:title="投擲"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="投擲" />
+	<ListPreference
+		android:key="list_skill_preference0905_soubi"
+		android:title="肉焼き"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="肉焼き" />
+	<ListPreference
+		android:key="list_skill_preference0906_soubi"
+		android:title="釣り"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="釣り" />
+	<ListPreference
+		android:key="list_skill_preference0907_soubi"
+		android:title="調合成功率"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="調合成功率" />
+	<ListPreference
+		android:key="list_skill_preference0908_soubi"
+		android:title="錬金術"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="錬金術" />
+	<ListPreference
+		android:key="list_skill_preference0909_soubi"
+		android:title="強肩"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="強肩" />
+	<ListPreference
+		android:key="list_skill_preference0910_soubi"
+		android:title="笛吹き名人"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="笛吹き名人" />
+	<ListPreference
+		android:key="list_skill_preference0911_soubi"
+		android:title="高速設置"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="高速設置" />
+	<ListPreference
+		android:key="list_skill_preference0912_soubi"
+		android:title="ナイフ使い"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="ナイフ使い" />
+	<ListPreference
+		android:key="list_skill_preference0913_soubi"
+		android:title="調合師"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="調合師" />
+	<ListPreference
+		android:key="list_skill_preference0914_soubi"
+		android:title="狩人"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="狩人" />
+	<ListPreference
+		android:key="list_skill_preference0915_soubi"
+		android:title="鼓舞"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="鼓舞" />
+	<ListPreference
+		android:key="list_skill_preference0916_soubi"
+		android:title="鉄腕"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="鉄腕" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="マップ・探知系"
+		android:key="ctg_skill_preference10_soubi"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference1001_soubi"
+		android:title="千里眼"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="千里眼" />
+	<ListPreference
+		android:key="list_skill_preference1002_soubi"
+		android:title="地図"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="地図" />
+	<ListPreference
+		android:key="list_skill_preference1003_soubi"
+		android:title="気配"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="気配" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="採集・運搬系"
+		android:key="ctg_skill_preference11_soubi"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference1101_soubi"
+		android:title="高速収集"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="高速収集" />
+	<ListPreference
+		android:key="list_skill_preference1102_soubi"
+		android:title="剥ぎ取り"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="剥ぎ取り" />
+	<ListPreference
+		android:key="list_skill_preference1103_soubi"
+		android:title="運搬"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="運搬" />
+	<ListPreference
+		android:key="list_skill_preference1104_soubi"
+		android:title="採取"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="採取" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="報酬・モンスター系"
+		android:key="ctg_skill_preference12_soubi"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference1201_soubi"
+		android:title="運気"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="運気" />
+	<ListPreference
+		android:key="list_skill_preference1202_soubi"
+		android:title="モンスター"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="モンスター" />
+	<ListPreference
+		android:key="list_skill_preference1203_soubi"
+		android:title="圧力"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="圧力" />
+	<ListPreference
+		android:key="list_skill_preference1204_soubi"
+		android:title="捕獲上手"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="捕獲上手" />
+	<ListPreference
+		android:key="list_skill_preference1205_soubi"
+		android:title="いたわり"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="いたわり" />
+	<ListPreference
+		android:key="list_skill_preference1206_soubi"
+		android:title="ブリーダー"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="ブリーダー" />
+	<ListPreference
+		android:key="list_skill_preference1207_soubi"
+		android:title="救援"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="救援" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="技系"
+		android:key="ctg_skill_preference13_soubi"
+		android:summary="">
+	<ListPreference
+		android:key="list_skill_preference1301_soubi"
+		android:title="片手剣技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="片手剣技" />
+	<ListPreference
+		android:key="list_skill_preference1302_soubi"
+		android:title="双剣技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="双剣技" />
+	<ListPreference
+		android:key="list_skill_preference1303_soubi"
+		android:title="大剣技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="大剣技" />
+	<ListPreference
+		android:key="list_skill_preference1304_soubi"
+		android:title="太刀技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="太刀技" />
+	<ListPreference
+		android:key="list_skill_preference1305_soubi"
+		android:title="鎚技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="鎚技" />
+	<ListPreference
+		android:key="list_skill_preference1306_soubi"
+		android:title="狩猟笛技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="狩猟笛技" />
+	<ListPreference
+		android:key="list_skill_preference1307_soubi"
+		android:title="槍技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="槍技" />
+	<ListPreference
+		android:key="list_skill_preference1308_soubi"
+		android:title="銃槍技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="銃槍技" />
+	<ListPreference
+		android:key="list_skill_preference1309_soubi"
+		android:title="軽銃技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="軽銃技" />
+	<ListPreference
+		android:key="list_skill_preference1310_soubi"
+		android:title="重銃技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="重銃技" />
+	<ListPreference
+		android:key="list_skill_preference1311_soubi"
+		android:title="弓技"
+		android:summary="設定なし"
+		android:defaultValue="0"
+		android:entries="@array/entryskillvalue_list_preference"
+		android:entryValues="@array/entryskillvalue_list_preference"
+		android:dialogTitle="弓技" />
+	</PreferenceScreen>
+	</PreferenceCategory>
+</PreferenceScreen>

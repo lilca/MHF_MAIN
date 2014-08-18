@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+	<TabHost android:id="@android:id/tabhost" android:layout_width="match_parent" android:layout_height="match_parent">
+		<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+			<mediba.ad.sdk.android.openx.MasAdView
+				android:id="@+id/adview"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:scrollbars="none"/>
+			<LinearLayout
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:background="@drawable/listitem01"
+				android:orientation="vertical">
+			<LinearLayout
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/btnSD_RELOAD" android:layout_weight="1"
+					android:background="@drawable/reload_btn"
+					android:layout_width="fill_parent" android:layout_height="60dip"/>
+				<Button
+					android:id="@+id/btnSD_NEWS" android:layout_weight="1"
+					android:background="@drawable/news_btn"
+					android:layout_width="fill_parent" android:layout_height="60dip"/>
+				<Button
+					android:id="@+id/btnSD_STATUS" android:layout_weight="1"
+					android:background="@drawable/status_btn"
+					android:layout_width="fill_parent" android:layout_height="60dip"/>
+				<Button
+					android:id="@+id/btnSD_CONFIG" android:layout_weight="1"
+					android:background="@drawable/config_btn"
+					android:layout_width="fill_parent" android:layout_height="60dip"/>
+				<Button
+					android:id="@+id/btnSD_INFO" android:layout_weight="1"
+					android:background="@drawable/info_btn"
+					android:layout_width="fill_parent" android:layout_height="60dip"/>
+				</LinearLayout>
+    		<TextView
+    			android:id="@+id/idbbscond"
+        		android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" 
+        		android:layout_margin="0.2sp" 
+        		android:textSize="12sp" 
+        		/> 
+			<TextView android:id="@+id/textView1" android:textColor="@color/fnth1clr" 
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    		</LinearLayout>
+			<TabWidget android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@android:id/tabs"/>
+				<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@android:id/tabcontent">
+					<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/content1sd"
+						android:background="@drawable/listitem01">
+						<ListView android:layout_width="match_parent" android:id="@+id/listView1" android:layout_height="fill_parent"></ListView>
+					</LinearLayout>
+					<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/content2sd"
+						android:background="@drawable/listitem01">
+						<ListView android:layout_width="match_parent" android:id="@+id/listView2" android:layout_height="fill_parent"></ListView>
+					</LinearLayout>
+					<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/content3sd"
+						android:background="@drawable/listitem01">
+						<ListView android:layout_width="match_parent" android:id="@+id/listView3" android:layout_height="fill_parent"></ListView>
+					</LinearLayout>
+				</FrameLayout>
+		</LinearLayout>
+	</TabHost>
+</LinearLayout>

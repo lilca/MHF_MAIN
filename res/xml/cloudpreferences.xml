@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="アカウント情報">
+	<EditTextPreference
+		android:key="email_preference"
+		android:title="メールアドレス(ID)"
+		android:summary="設定なし"
+		android:dialogTitle="メールアドレス(ID)" />
+	<EditTextPreference
+		android:key="password_preference"
+		android:password="true"
+		android:title="パスワード"
+		android:summary="設定なし"
+		android:dialogTitle="パスワード" />
+	</PreferenceCategory>
+</PreferenceScreen>

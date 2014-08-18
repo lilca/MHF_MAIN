@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	>
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="fill_parent"
+	android:layout_margin="5sp"
+	android:orientation="vertical"
+	>
+    <TextView  
+    	android:id="@+id/idTop"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="left" 
+        android:layout_margin="0.2sp" 
+        android:textSize="18sp" 
+        android:textStyle="bold" 
+        /> 
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+
+	    <TableLayout
+	        android:id="@+id/LinearLayout01"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.93"
+	        android:shrinkColumns="1"
+	        android:stretchColumns="1" >
+
+	        <TableRow>
+
+	            <TextView
+	                android:id="@+id/idEx0"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left"
+	                android:layout_margin="0.2sp"
+	                android:text="@string/kywd"
+	                android:textSize="12sp" />
+
+	            <TextView
+	                android:id="@+id/idMiddle0"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left"
+	                android:layout_margin="0.2sp"
+	                android:textSize="12sp" />
+	        </TableRow>
+
+	        <TableRow>
+
+	            <TextView
+	                android:id="@+id/idEx1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left"
+	                android:layout_margin="0.2sp"
+	                android:text="@string/purpose"
+	                android:textSize="12sp" />
+
+	            <TextView
+	                android:id="@+id/idMiddle1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left"
+	                android:layout_margin="0.2sp"
+	                android:textSize="12sp" />
+	        </TableRow>
+
+	        <TableRow>
+
+	            <TextView
+	                android:id="@+id/idEx2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left"
+	                android:layout_margin="0.2sp"
+	                android:text="@string/weapon"
+	                android:textSize="12sp" />
+
+	            <TextView
+	                android:id="@+id/idMiddle2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left"
+	                android:layout_margin="0.2sp"
+	                android:textSize="12sp" />
+	        </TableRow>
+
+	        <TableRow>
+
+	            <TextView
+	                android:id="@+id/idEx3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left"
+	                android:layout_margin="0.2sp"
+	                android:text="@string/def"
+	                android:textSize="12sp" />
+
+	            <TextView
+	                android:id="@+id/idMiddle3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left"
+	                android:layout_margin="0.2sp"
+	                android:textSize="12sp" />
+	        </TableRow>
+
+	        <TableRow>
+
+	            <TextView
+	                android:id="@+id/idEx4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left"
+	                android:layout_margin="0.2sp"
+	                android:text="@string/skill"
+	                android:textSize="12sp" />
+
+	            <TextView
+	                android:id="@+id/idMiddle4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left"
+	                android:layout_margin="0.2sp"
+	                android:textSize="12sp" />
+
+	            <TextView
+	                android:id="@+id/idDummy"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left"
+	                android:layout_margin="0.2sp"
+	                android:textSize="12sp" />
+	        </TableRow>
+	    </TableLayout> 
+	    <Button
+	        android:id="@+id/idBBSRight1"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_gravity="center_vertical|center_horizontal"
+	        android:layout_margin="5sp"
+	        android:background="@drawable/btnimage_del"
+	        android:gravity="right" />
+	</LinearLayout>
+	<TextView
+   	    android:id="@+id/idBottom" 
+       	android:layout_width="fill_parent"  
+       	android:layout_height="wrap_content" 
+       	android:layout_gravity="right" 
+      	android:layout_margin="0.2sp" 
+       	android:textSize="12sp"
+       	/>
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+		<TextView
+   	    	android:id="@+id/idIikamoText" 
+       		android:layout_width="wrap_content"  
+       		android:layout_height="wrap_content" 
+       		android:layout_gravity="right" 
+       		android:textSize="10sp"
+       		android:textColor="#00FFFF"
+       		/>
+	   	<ToggleButton
+		    android:id="@+id/idIIkamoButton"
+		    android:textOn=""
+		    android:textOff=""
+		    android:layout_width="60dp"
+		    android:layout_height="15dp"
+		    android:background="@drawable/iikamo_tgl"
+		    />
+	</LinearLayout> 
+</LinearLayout>
+</LinearLayout>

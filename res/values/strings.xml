@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">装備編集</string>
+    <string name="sub_buki_name">武器選択</string>
+    <string name="sub_soubi_name">防具選択</string>
+    <string name="sub_skill_name">珠選択</string>
+    <string name="sub_kafus_name">カフ選択</string>
+    <string name="sub_app1_name">セット選択</string>
+    <string name="sub_app2_name">装備無問題？</string>
+    <string name="sub_app3_name">データ管理</string>
+    <string name="sub_app4_name">保存場所を選んで下さい</string>
+    <string name="sub_app5_name">cLoud BBS</string>
+    <string name="setchoice_button">セット選択</string>
+    <string name="title_edit">タイトル</string>
+    <string name="gender_item">性別＆アイテム</string>
+    <string name="tergetskill">目標スキル</string>
+    <string name="keyword">キーワード</string>
+    <string name="comment">コメント</string>
+    <string name="dummy1">cLoudは近日サービス開始予定</string>
+    <string name="kywd">keyword</string>
+    <string name="purpose">目的</string>
+    <string name="weapon">武器</string>
+    <string name="def">防御</string>
+    <string name="skill">スキル</string>
+    <string name="search">絞込み</string>
+    <string name="search_button">検索</string>
+    <string name="negative_button">スキル発動抑制</string>
+    <string name="tabicon">タブアイコン</string>
+</resources>
